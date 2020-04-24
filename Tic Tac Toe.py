@@ -12,7 +12,7 @@ from IPython.display import clear_output
 
 
 def print_board(l):
- #to print the board in current condition
+#to print the board in current condition
 
     #clears the previous output
     clear_output()    
@@ -23,7 +23,7 @@ def print_board(l):
     print("     |     |\n {} | {} | {} \n     |     |     ".format(l[6],l[7],l[8]))
 
 def winner(win_mark):
-    #to print the winner of the game
+#to print the winner of the game
 
     #checks if player1 is the winner
     if win_mark==" "+play1+" ":
@@ -74,13 +74,13 @@ def win_check():
     
 
 def place_marker(pos,mar):
-    # to place marker on the board     
+# to place marker on the board     
     l[pos-1]=" "+mar+" "
 
 def take_input(m1,m2):
 # to take position at wich player want to place the marker
 
-#takes player1's choice to place the marker
+    #takes player1's choice to place the marker
     if win_check()!=True and m1==True:
         p1_pos=int(input("Player 1 enter the postion to place your marker"))
         # checks if the position is already taken or not
@@ -96,7 +96,7 @@ def take_input(m1,m2):
             return
     print_board(l)
             
-#takes player2's choice to place the marker
+    #takes player2's choice to place the marker
     if win_check()!=True and m2==True:
         p2_pos=int(input("Player 2 enter the postion to place your marker"))
         # checks if the position is already taken or not
