@@ -10,7 +10,6 @@ Python Packages or Modules->    1. IPython
 #importing necessary packages and modules
 from IPython.display import clear_output 
 
-
 def print_board(l):
 #to print the board in current condition
 
@@ -136,5 +135,3 @@ while win_check()!=True:
     clear_output() 
     
     print_board(l)
-    
-    
